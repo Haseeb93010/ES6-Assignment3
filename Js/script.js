@@ -34,18 +34,53 @@ function simpleAlert() {
 
 function printMyName() {
     let myName = document.getElementById("inputText").value;
-    if (!myName) {
+    let cap = myName.charAt(0).toUpperCase() + myName.slice(1)
+    if (!cap) {
         alert("Please Enter Your Name.");
         return;
     }
-    showOutput(myName);
+    showOutput(cap);
 }
 
 // print all cities function --------------------------------------------------------- ! 
 
-function printAllCities(){
+function printAllCities() {
     clearResult('');
     for (let i = 0; i < cities.length; i++) {
-        document.getElementById("output").innerHTML += i + 1 + ') ' + cities[i] + "<br />" ;
+        document.getElementById("output").innerHTML += i + 1 + ') ' + cities[i] + "<br />";
+    }
+}
+
+// create city function --------------------------------------------------------------- !
+
+function addCity() {
+    clearResult('');
+
+    let city = document.getElementById("inputText").value;
+    let capCity = city.charAt(0).toUpperCase() + city.slice(1);
+
+    if (!capCity) {
+        alert("Please enter your city name.");
+        return;
+    }
+
+    cities.push(capCity);
+    let html = '<span style ="color:green; font-size: 25px">"' + capCity + '"</span> has been successfully added to your list.';
+    showOutput(html)
+}
+
+// create table function ---------------------------------------------------------------- !
+
+function generateTabel() {
+    let number = document.getElementById('inputText').value;
+
+    if (!number) {
+        alert("Please type your number.");
+        return;
+    }
+    clearResult('');
+    let generatorNumber = +prompt("what is a number where you create number");
+    for (let num = 1; num <= generatorNumber; num++) {
+        document.getElementById("output").innerHTML += number + " x " + num + " = " + number * num + "<br />";
     }
 }
