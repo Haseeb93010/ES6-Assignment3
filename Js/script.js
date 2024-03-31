@@ -79,7 +79,7 @@ function generateTabel() {
         return;
     }
     clearResult('');
-    let generatorNumber = +prompt("what is a number where you create number");
+    let generatorNumber = +prompt("How long do you want to make the table?");
     for (let num = 1; num <= generatorNumber; num++) {
         document.getElementById("output").innerHTML += number + " x " + num + " = " + number * num + "<br />";
     }
