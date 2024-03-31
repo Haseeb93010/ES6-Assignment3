@@ -3,10 +3,16 @@ $myColor:#1d3357;
 .navbar{
     background-color: $myColor !important;
 }
+#originalString{
+    background-color: $myColor;
+}
 .button{
     text-align: center;
 }
 .button .btn{
     min-width: 45%;
     margin-bottom: 5px;
+}
+footer{
+    background-color: $myColor;
 }

@@ -2,6 +2,10 @@
   background-color: #1d3357 !important;
 }
 
+#originalString {
+  background-color: #1d3357;
+}
+
 .button {
   text-align: center;
 }
@@ -9,4 +13,8 @@
 .button .btn {
   min-width: 45%;
   margin-bottom: 5px;
+}
+
+footer {
+  background-color: #1d3357;
 }/*# sourceMappingURL=style.css.map */
