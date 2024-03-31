@@ -10,7 +10,7 @@
     <!-- Custom css -->
     <link rel="stylesheet" href="sass/style.css">
 </head>
-<body>
+<body class="d-flex d-flex flex-column min-vh-100">
     <header>
         <!-- Navbar code--------------------------------------------------------------- -->
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
@@ -35,6 +35,66 @@
             </div>
         </nav>
     </header>
+    <!-- main section -------------------------------------------------------------------- -->
+    <main>
+        <main class="flex-grow-1 flex-shrink-0 flex-fill-auto">
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="text-center">Chapter # 15-20 |Array: it's Methods & for loops</h3>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <!-- input section------------------------------------------------------------ -->
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-12 col-sm-6 mb-3 mb-sm-0">
+                        <h3 class="text-center">Input</h3>
+                        <div class="border rounded p-4">
+                            <div class="input-group">
+                                <input type="text" id="inputText" class="form-control" placeholder="Type your text here"
+                                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                                <button type="button" class="btn btn-outline-secondary" type="button" id="button-addon2"
+                                    onclick="clearInput()">Clear</button>
+                            </div>
+                        </div>
+                    </div>
+            <!-- originalString section----------------------------------------------------- -->
+                    <div class="col-12 col-sm-6">
+                        <h3 class="text-center">Original String</h3>
+                        <div class="border rounded p-4 text-center text-white" style="min-height: 88px;"
+                            id="originalString">
+                            <p class="mb-0" id="originalString"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- buttons section------------------------------------------------------------- -->
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-12 col-sm-6 mb-3 mb-sm-0">
+                        <h3 class="text-center">Buttons</h3>
+                        <div class="border rounded p-3 button">
+                            <button type="button" class="btn btn-danger">Simple Alert</button>
+                            <button type="button" class="btn btn-danger">Print My Name</button>
+                            <button type="button" class="btn btn-danger">Print All City</button>
+                            <button type="button" class="btn btn-danger">Add Your City In List</button>
+                            <button type="button" class="btn btn-danger">Generate Table</button>
+                        </div>
+                    </div>
+                    <!-- output section -------------------------------------------------------- -->
+                    <div class="col-12 col-sm-6">
+                        <h3 class="text-center">Output / Result</h3>
+                        <div class="border rounded p-5 text-center" style="min-height: 163px;">
+                            <p class="mb-0" id="output"></p>
+                        </div>
+                        <div class="text-center mt-3"><button type="button" class="btn btn-outline-dark">Clear
+                                Output</button></div>
+                    </div>
+                </div>
+            </div>
+    </main>
     <!-- Bootstrap js--------------------------------------------------------------------- -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
